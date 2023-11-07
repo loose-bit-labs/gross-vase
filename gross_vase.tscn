@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bunvdwf37a8fr"]
+
+[ext_resource type="PackedScene" uid="uid://dqsqa1ne0bth1" path="res://gross_vase.glb" id="1_y1xxn"]
+
+[node name="gross_vase" instance=ExtResource("1_y1xxn")]

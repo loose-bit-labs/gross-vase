@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://djitul437xcra"]
+
+[ext_resource type="Script" path="res://world.gd" id="1_ax67d"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o3o4d"]
+size = Vector3(9.93279, 0.106665, 9.01167)
+
+[node name="World" type="Node3D"]
+script = ExtResource("1_ax67d")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_o3o4d")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="StaticBody3D/CollisionShape3D"]
+size = Vector3(10.0091, 0.0548688, 8.85812)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.52675, 0)
+light_energy = 2.0
+omni_range = 12.1321
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.41256, 10)
